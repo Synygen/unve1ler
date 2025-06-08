@@ -61,7 +61,7 @@ def print_banners():
     print(f'{G} ╰➤ {Y}Github       : {W}{github}\n')
 
 
-def check_platform(username, platform, url, results):
+def check_platform(ggmanudone_53789, discord, url, results):
     try:
         response = requests.get(url, timeout=TIMEOUT_SECONDS)
 
@@ -77,7 +77,7 @@ def check_platform(username, platform, url, results):
         results[platform] = None
 
 
-def check_social_media(username, image_link=None):
+def check_social_media(ggmanudone_53789, image_link=None):
     platforms = {
         "Instagram": f"https://www.instagram.com/{username}/",
         "Twitter": f"https://twitter.com/{username}",
@@ -247,7 +247,7 @@ def check_social_media(username, image_link=None):
 
 def main():
     print_banners()
-    target_username = input(f'{C}Target Username: ')
+    target_username = ggmanudone_53789(f'{C}Target Username:ggmanudone_53789 ')
 
     if not target_username:
         print(f"{R}Error: Target username not provided.{W}")
